@@ -1,0 +1,467 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-image: url('news-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20rem;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .5rem;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.396);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+nav img {
+    width: 4rem;
+}
+
+nav  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul li a:hover{
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    
+}
+
+nav .active {
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: purple;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: none;
+    
+}
+
+.nav-menu {
+    display: none;
+}
+
+
+
+#showcase h2{
+    font-weight: 200;
+    font-size: 5rem;
+    padding-top: 12rem;
+    letter-spacing: -3px;
+
+}
+
+#news {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.event-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 3px solid purple;
+    padding: 1rem;
+
+}
+
+.event-group img {
+    width: 30%;
+}
+
+.event-text {
+    width: 50%;
+}
+
+.event-text a {
+    background-color: purple;
+    border: none;
+}
+
+.event-text h4 {
+    color: purple;
+}
+
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.986);
+}
+.contact {
+    padding-top: 15rem;
+    text-align: center;
+    color: white;
+
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.contact h4 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.contact h5 {
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 3rem;
+    font-style: italic;
+}
+
+.contact p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 200;
+}
+
+.social {
+    font-size: 5rem;
+    gap: 2rem;
+    padding-bottom: 10rem;
+}
+
+#summary {
+    padding-top: 3rem;
+    background-color: purple;
+    /* padding-bottom: 3rem; */
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.flex h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex h4 {
+    color: white;
+}
+
+.flex h6, .flex p {
+    font-size: 0.8rem;
+}
+
+.first h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.first h3 img {
+    width: 3rem;
+}
+.first h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    
+}
+
+.input input {
+    padding: 1rem;
+    width: 85%;
+    border: none;
+
+}
+
+.input button {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: -1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.address {
+    display: flex;
+}
+
+.address-text h6{
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    *{
+        font-size: 14px;
+    
+    }
+
+    header h1{
+        font-size: .6rem;
+    }
+
+
+
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    #showcase {
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+    }
+
+
+
+    .contact {
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+
+    }
+
+    .contact h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 3rem;
+    }
+
+    .contact h4 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+
+    .contact h5 {
+        font-size: 3rem;
+        font-weight: 200;
+        padding-bottom: 2rem;
+        font-style: italic;
+    }
+
+
+    .social {
+        font-size: 6rem;
+        gap: 2rem;
+        padding-bottom: 5rem;
+    
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        color: white;
+        font-family:'Courier New', Courier, monospace ;
+    }
+
+    .flex a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+
+    .flex h5 {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .flex h4 {
+        color: white;
+    }
+
+    .flex h6, .flex p {
+        font-size: 0.8rem;
+    }
+
+    .first h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+    .first h3 img {
+        width: 3rem;
+    }
+    .first h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    *{
+        font-size: 9px;
+    
+    }
+
+    .event-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        border: none;
+        padding: 1rem;
+
+    }
+
+    .event-group img {
+        width: 20rem;
+    }
+
+
+
+    .flex {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        color: white;
+        font-family:'Courier New', Courier, monospace ;
+    }
+
+    .flex a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+
+    .flex h5 {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .flex h4 {
+        color: white;
+    }
+
+    .flex h6, .flex p {
+        font-size: 0.8rem;
+    }
+
+    .first h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+        width: 75%;
+    }
+    .first h3 img {
+        width: 25%;
+    }
+    .first h4 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
