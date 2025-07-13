@@ -395,7 +395,7 @@ footer span {
 
 @media (max-width: 700px) {
     *{
-        font-size: 9px;
+        font-size: 10px;
     
     }
 
@@ -411,7 +411,16 @@ footer span {
     }
 
     .event-group img {
-        width: 20rem;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .event-text {
+        width: 100%;
+    }
+
+    .event-text h4 + h5 + p{
+        padding-bottom: 1rem;
     }
 
 

@@ -423,9 +423,18 @@ footer span {
         padding-bottom: 8rem;
     }
 
+    #showcase h2{
+        letter-spacing: 1px;
+    }
+
+    #mission h3 {
+        letter-spacing: 0px;
+    }
+
 
     #activity h3 {
         font-size: 2rem;
+        letter-spacing: 0px;
     }
 
     .activity {
@@ -436,7 +445,7 @@ footer span {
     
     .activity-text {
         order: 2;
-        width: 100%;
+        width: 70%;
     }
     .activity-img{
         order: 1;
@@ -546,9 +555,10 @@ footer span {
 
 @media (max-width: 700px) {
     *{
-        font-size: 9px;
+        font-size: 10px;
     
     }
+
 
 
     .flex {
