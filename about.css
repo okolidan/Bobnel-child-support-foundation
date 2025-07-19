@@ -160,7 +160,7 @@ nav .active {
 
 .people {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -198,7 +198,8 @@ nav .active {
     border-radius: 5px;
 }
 
-.people-two{
+.people-two, 
+.people-four {
     background-color: rgb(28, 31, 34);
     color: white;
     padding: 1rem;
@@ -399,7 +400,7 @@ footer span {
     }
 
     .genesis-img img {
-        width: 25rem;
+        width: 100%;
     }
     
 

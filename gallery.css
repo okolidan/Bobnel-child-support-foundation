@@ -155,8 +155,14 @@ nav .active {
 
 #photos img {
     width: 100%;
+    aspect-ratio: 1/1;
 }
 
+#photos img:hover {
+    border: 3px, solid, purple;
+    padding: 1rem;
+    
+}
 
 
 
@@ -169,8 +175,12 @@ nav .active {
   border-bottom: 2px solid purple;
 }
 
-
-
+.oph-2 {
+    display: none;
+}
+.cp-24 {
+    display: none;
+}
 
 
 .cp-23 {
@@ -182,6 +192,10 @@ nav .active {
 }
 
 .eye {
+    display: none;
+}
+
+.eye-2 {
     display: none;
 }
 
