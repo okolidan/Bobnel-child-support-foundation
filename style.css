@@ -253,6 +253,12 @@ nav .active {
     padding-bottom: 2rem;
 }
 
+.card-groups {
+        display: flex;
+        justify-content: center;
+    }
+
+
 .card a {
      background-color: purple;
      border: none;
@@ -412,6 +418,8 @@ footer span {
     .nav-menu {
         display: block;
         cursor: pointer;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-bar {
@@ -449,6 +457,11 @@ footer span {
     }
     .activity-img{
         order: 1;
+    }
+
+    .card-groups {
+        display: flex;
+        flex-direction: column;
     }
 
     .reviews p {

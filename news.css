@@ -126,6 +126,11 @@ nav .active {
 
 }
 
+.event-group:hover {
+    border-color: black;
+    padding: 1rem;
+}
+
 .event-group img {
     width: 30%;
 }
